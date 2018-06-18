@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <PreferenceCategory
+        android:title="@string/preference_category_appearance">
+        <SwitchPreference
+            android:key="@string/color_blind_switch_key"
+            android:title="@string/color_mode_switch_title"
+            android:summary="@string/color_mode_switch_summary"
+            android:icon="@drawable/ic_remove_red_eye"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_category_data">
+        <SwitchPreference
+            android:key="@string/timer_switch_key"
+            android:title="@string/timer_switch_title"
+            android:icon="@drawable/ic_av_timer"
+            android:defaultValue="true"/>
+        <Preference
+            android:key="@string/timer_picker_key"
+            android:title="@string/timer_picker_title"
+            android:icon="@drawable/ic_timer"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_category_locations">
+        <Preference
+            android:key="@string/delete_user_location_button_key"
+            android:title="@string/delete_user_location_button_title"
+            android:icon="@drawable/ic_delete"/>
+        <Preference
+            android:key="@string/delete_user_locations_button_key"
+            android:title="@string/delete_all_locations_button_title"
+            android:icon="@drawable/ic_delete_forever"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_category_miscellaneous">
+        <Preference
+            android:key="@string/about_dialog_key"
+            android:title="@string/about_dialog_title"
+            android:icon="@drawable/ic_info_outline"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

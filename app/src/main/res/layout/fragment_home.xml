@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vlady.newair.Activity.MainActivity"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/ic_sun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/carousel"
+        android:alpha="0.25"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="50dp"
+        app:srcCompat="@drawable/ic_clouds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/carousel"
+        android:alpha="0.25"/>
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/ic_hot_air_balloon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/carouselArrowRight"
+        app:layout_constraintBottom_toTopOf="@id/healthMessage"
+        android:alpha="0.2"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@drawable/ic_mountains"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:alpha="0.25"/>
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        app:srcCompat="@drawable/ic_fruit_tree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:alpha="0.35"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_pine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:alpha="0.35"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        app:srcCompat="@drawable/ic_poppy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:alpha="0.5"/>
+
+    <!--GUIDELINES-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.22" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.22" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <!--SETTINGS ICONS-->
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:background="@null"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/refreshButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:background="@null"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintTop_toTopOf="@+id/settingsButton"
+        app:layout_constraintBottom_toBottomOf="@+id/settingsButton"
+        app:layout_constraintEnd_toStartOf="@+id/settingsButton"/>
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:background="@null"
+        android:src="@drawable/ic_add_location"
+        app:layout_constraintTop_toTopOf="@+id/refreshButton"
+        app:layout_constraintBottom_toBottomOf="@+id/refreshButton"
+        app:layout_constraintEnd_toStartOf="@+id/refreshButton"/>
+
+    <!--CAROUSEL-->
+    <in.goodiebag.carouselpicker.CarouselPicker
+        android:id="@+id/carousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        app:items_visible="three"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <View
+        android:id="@+id/circle"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle"
+        app:layout_constraintTop_toTopOf="@id/carouselMessage"
+        app:layout_constraintBottom_toBottomOf="@id/carouselMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/carouselMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="00.0"
+        android:textSize="80sp"
+        app:layout_constraintTop_toBottomOf="@+id/carousel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/pollutionDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PM10 μg/m3"
+        app:layout_constraintTop_toBottomOf="@+id/carouselMessage"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"/>
+    <ImageButton
+        android:id="@+id/carouselArrowLeft"
+        android:src="@drawable/ic_keyboard_arrow_left"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="@+id/carouselMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/carouselMessage"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"/>
+    <ImageButton
+        android:id="@+id/carouselArrowRight"
+        android:src="@drawable/ic_keyboard_arrow_right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:background="@null"
+        app:layout_constraintTop_toTopOf="@+id/carouselMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/carouselMessage"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"/>
+
+    <!--HEALTH MESSAGE-->
+    <TextView
+        android:id="@+id/healthMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/circle"
+        app:layout_constraintBottom_toTopOf="@id/temperatureIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--INDICATORS-->
+    <ImageView
+        android:id="@+id/temperatureIcon"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/healthMessage"
+        app:layout_constraintBottom_toTopOf="@id/distance_text"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:srcCompat="@drawable/ic_temperature"/>
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/temperatureIcon"
+        app:layout_constraintStart_toEndOf="@+id/temperatureIcon"
+        app:layout_constraintTop_toTopOf="@+id/temperatureIcon" />
+    <TextView
+        android:id="@+id/temperatureFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="°C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/temperatureText"
+        app:layout_constraintStart_toEndOf="@+id/temperatureText"
+        app:layout_constraintTop_toTopOf="@+id/temperatureText" />
+
+    <ImageView
+        android:id="@+id/humidityIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintBottom_toBottomOf="@+id/temperatureIcon"
+        app:srcCompat="@drawable/ic_humidity"/>
+    <TextView
+        android:id="@+id/humidityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="H"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/humidityIcon"
+        app:layout_constraintStart_toEndOf="@+id/humidityIcon"
+        app:layout_constraintTop_toTopOf="@+id/humidityIcon" />
+    <TextView
+        android:id="@+id/humidityFormat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/humidityText"
+        app:layout_constraintStart_toEndOf="@+id/humidityText"
+        app:layout_constraintTop_toTopOf="@+id/humidityText" />
+
+    <!--ADDITIONAL INFO-->
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Nearest sensor: Xm"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</android.support.constraint.ConstraintLayout>

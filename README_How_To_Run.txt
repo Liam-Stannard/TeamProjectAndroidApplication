@@ -1,0 +1,1 @@
+This directory contains the source code of NewAir, along with an installation APK for manual transfer (NewAir.apk)

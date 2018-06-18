@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Data-->
+    <integer name="invalid_integer">-1</integer>
+    <integer name="history_dates_number">7</integer>
+
+    <!--FileManager-->
+    <integer name="user_locations_array_items_number">3</integer>
+    <integer name="user_locations_array_position_names">0</integer>
+    <integer name="user_locations_array_position_latitude">1</integer>
+    <integer name="user_locations_array_position_longitude">2</integer>
+
+    <integer name="history_data_array_items_number">4</integer>
+    <integer name="history_data_array_position_dates">0</integer>
+    <integer name="history_data_array_position_pm25">1</integer>
+    <integer name="history_data_array_position_pm10">2</integer>
+    <integer name="history_data_array_position_o3">3</integer>
+
+    <!--Home-->
+    <integer name="carousel_number_size">10</integer>
+    <integer name="nearby_home_array_position">0</integer>
+    <integer name="city_home_array_position">1</integer>
+    <integer name="name_max_length">15</integer>
+
+    <!--Navbar-->
+    <integer name="navbar_map_position">0</integer>
+    <integer name="navbar_home_position">1</integer>
+    <integer name="navbar_graph_position">2</integer>
+
+    <!--Map-->
+    <integer name="map_zoom">14</integer>
+    <integer name="circle_radius_metres">100</integer>
+    <integer name="circle_stroke_size">0</integer>
+    <integer name="circle_opacity">150</integer>
+
+    <!--Graph-->
+    <integer name="graph_max_limit">100</integer>
+    <integer name="graph_circle_radius">6</integer>
+    <integer name="graph_circle_hole_radius">5</integer>
+    <integer name="graph_line_width">3</integer>
+    <integer name="graph_text_size">15</integer>
+    <integer name="graph_description_text_size">12</integer>
+    <integer name="graph_dates_angle">-45</integer>
+
+    <!--Settings-->
+    <!--Number Picker-->
+    <integer name="minutes_min">0</integer>
+    <integer name="minutes_max">10</integer>
+    <integer name="minutes_default">1</integer>
+    <integer name="seconds_min">15</integer>
+    <integer name="seconds_max">59</integer>
+    <integer name="seconds_default">15</integer>
+
+    <!--JSON-->
+    <!--Sensor Data-->
+    <integer name="measurement_limit_upper">300</integer>
+
+    <!--History-->
+    <integer name="json_history_array_elements">2</integer>
+    <integer name="json_history_measurements_position">0</integer>
+    <integer name="json_history_measurements_number_position">1</integer>
+    <integer name="json_history_approximates_array_size">3</integer>
+    <integer name="json_history_approximates_pm25_position">0</integer>
+    <integer name="json_history_approximates_pm10_position">1</integer>
+    <integer name="json_history_approximates_o3_position">2</integer>
+
+</resources>

@@ -1,0 +1,130 @@
+<resources>
+    <!--Initial load-->
+    <string name="user_locations_file">locations.ser</string>
+    <string name="user_locations_file_tag">USER LOCATIONS FILE</string>
+    <string name="user_locations_file_already_exists_message">USER LOCATIONS FILE ALREADY EXISTS</string>
+    <string name="user_locations_file_empty">USER LOCATIONS FILE EMPTY</string>
+
+    <string name="history_data_file">history_data.ser</string>
+    <string name="history_data_file_tag">HISTORY DATA FILE</string>
+    <string name="history_data_file_already_exists_message">HISTORY DATA FILE ALREADY EXISTS</string>
+    <string name="history_data_file_empty">HISTORY DATA FILE EMPTY</string>
+
+    <string name="location_window_title">Location</string>
+    <string name="location_window_contents">Location services not enabled. Enable in Settings?</string>
+
+    <string name="network_window_title">Network</string>
+    <string name="network_window_contents">Network connection required. Retry?</string>
+
+    <!--Loading bar-->
+    <string name="progress_bar_message">Loading</string>
+
+    <!--Fragments-->
+    <string name="app_name">NewAir</string>
+    <string name="title_map">Map</string>
+    <string name="title_home">Home</string>
+    <string name="title_graph">History</string>
+    <string name="title_settings">Settings</string>
+
+    <!--Home-->
+    <string name="closest_sensor_distance">Nearest sensor: %sm</string>
+    <string name="data_not_avaiable">Data not\navailable</string>
+    <string name="name_too_long">Name too long</string>
+
+    <!--Map-->
+    <string name="default_latitude">54.979190</string>
+    <string name="default_longitude">-1.614668</string>
+
+    <string name="newcastle_max_latitude">55.055446</string>
+    <string name="newcastle_min_latitude">54.934521</string>
+    <string name="newcastle_min_longitude">-1.698933</string>
+    <string name="newcastle_max_longitude">-1.483927</string>
+
+    <!--Graph-->
+    <string name="line_data_set_label">Dates</string>
+    <string name="calendar_format">dd/MM/yyyy</string>
+    <string name="date_format">%d %s</string>
+    <string name="graph_description">PM10</string>
+
+    <!--Settings-->
+    <string name="preference_category_appearance">Appearance</string>
+    <string name="preference_category_data">Data</string>
+    <string name="preference_category_locations">Locations</string>
+    <string name="preference_category_miscellaneous">Miscellaneous</string>
+
+    <!--Colorblind-->
+    <string name="color_blind_switch_key">color_blind_checkbox_key</string>
+    <string name="color_mode_switch_title">Colour blind</string>
+    <string name="color_mode_switch_summary">Enable a colour blind palette</string>
+
+    <!--Timer-->
+    <string name="timer_switch_key">timer_switch_key</string>
+    <string name="timer_switch_title">Automatic updates</string>
+    <string name="timer_picker_key">timer_picker_key</string>
+    <string name="timer_picker_title">Update interval</string>
+    <string name="timer_minutes_shared_key">timer_minutes_shared_key</string>
+    <string name="timer_seconds_shared_key">timer_seconds_shared_key</string>
+    <string name="timer_picker_summary_format">%d minutes %d seconds</string>
+    <string name="timer_picker_summary_disabled">Disabled</string>
+
+    <!--Locations-->
+    <string name="delete_user_locations_button_key">delete_user_locations_preference</string>
+    <string name="delete_all_locations_button_title">Delete all locations</string>
+    <string name="delete_user_location_button_key">delete_user_location_preference</string>
+    <string name="delete_user_location_button_title">Delete location</string>
+
+    <!--About-->
+    <string name="about_dialog_key">about_dialog</string>
+    <string name="about_dialog_title">About</string>
+    <string name="about_dialog_contents">Authors:\n
+        R.J. Cooper\n
+        V.M.T. Godsell\n
+        I. Gylaris\n
+        A.L.J. Heilling\n
+        V. Iliev\n
+        L.P. Stannard\n
+        I.J. Watt\n
+        B.D. Wilsher\n
+        \n
+        External resources by:\n
+        Freepik\n
+    </string>
+
+    <!--Add new location dialog-->
+    <string name="add_custom_location_dialog_title">Location name</string>
+    <string name="location_empty">Enter a valid name</string>
+    <string name="location_outside_newcastle">Location outside sensor coverage</string>
+    <string name="location_already_exists_format">%s %s</string>
+    <string name="location_already_exists_toast">Location already exists:</string>
+
+    <!--Dates-->
+    <string name="date_condensed_format">yyyyMMdd</string>
+    <string name="date_hyphenated_format">yyyy-MM-dd HH:mm:ss</string>
+
+    <!--JSON-->
+    <string name="live_address">http://uoweb1.ncl.ac.uk/api/v1/sensors/live.json?</string>
+    <string name="history_address">http://uoweb1.ncl.ac.uk/api/v1/sensors/data/raw.json?</string>
+    <string name="api_key">api_key&#61;ixh6gq465ugi5ykv54rzaogqkn4bxdip6o487po3l6hb4uow4v0xxigeel077z8o8nieijz4vna19q8too98jtbmis</string>
+    <string name="variable_format">&amp;variable&#61;%s</string>
+    <string name="buffer_query">&amp;buffer&#61;%f,%f,%d</string>
+
+    <string name="two_variables_format">%s-and-%s</string>
+    <string name="three_variables_format">%s-and-%s-and-%s</string>
+    <string name="start_end_time_format">&amp;start_time&#61;%s000000&amp;end_time&#61;%s235959</string>
+
+    <string name="json_is_active_key">active</string>
+    <string name="json_data_key">data</string>
+    <string name="json_geom_key">geom</string>
+    <string name="json_coordinates_key">coordinates</string>
+
+    <string name="pm25_variable">PM2.5</string>
+    <string name="pm10_variable">PM10</string>
+    <string name="o3_variable">O3</string>
+    <string name="temperature_variable">Temperature</string>
+    <string name="humidity_variable">Humidity</string>
+
+    <string name="no_json_object_found_log_title">JSON: </string>
+    <string name="no_json_object_found_log_contents">EMPTY JSON SENSOR FOUND</string>
+
+    <string name="ping_request">ping -c 1 uoweb1.ncl.ac.uk</string>
+</resources>

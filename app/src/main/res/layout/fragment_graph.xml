@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vlady.newair.Activity.MainActivity">
+
+    <!--HEADER-->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="History"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/refreshButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/refreshButton" />
+
+    <!--BUTTONS-->
+    <ImageButton
+        android:id="@+id/refreshButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:padding="15dp"
+        android:src="@drawable/ic_refresh_brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--CHART-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@+id/refreshButton" />
+
+    <!--POLLUTERS-->
+    <TextView
+        android:id="@+id/pm25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00.0"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/line_chart"
+        app:layout_constraintBottom_toTopOf="@+id/pm25label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pm10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <TextView
+        android:id="@+id/pm25label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PM2.5"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/pm25"
+        app:layout_constraintBottom_toTopOf="@+id/pm25ug"
+        app:layout_constraintEnd_toEndOf="@+id/pm25"/>
+    <TextView
+        android:id="@+id/pm25ug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="μg/m3"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/pm25label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/pm25"/>
+
+    <TextView
+        android:id="@+id/pm10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00.0"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="@id/pm25"
+        app:layout_constraintBottom_toBottomOf="@id/pm25"
+        app:layout_constraintStart_toEndOf="@+id/pm25"
+        app:layout_constraintEnd_toStartOf="@+id/o3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <TextView
+        android:id="@+id/pm10label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PM10"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/pm10"
+        app:layout_constraintEnd_toEndOf="@+id/pm10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="μg/m3"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/pm10label"
+        app:layout_constraintEnd_toEndOf="@+id/pm10"/>
+
+    <TextView
+        android:id="@+id/o3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00.0"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="@id/pm10"
+        app:layout_constraintBottom_toBottomOf="@+id/pm10"
+        app:layout_constraintStart_toEndOf="@+id/pm10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <TextView
+        android:id="@+id/o3label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O3"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/o3"
+        app:layout_constraintEnd_toEndOf="@+id/o3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="μg/m3"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/o3label"
+        app:layout_constraintEnd_toEndOf="@+id/o3"/>
+
+</android.support.constraint.ConstraintLayout>

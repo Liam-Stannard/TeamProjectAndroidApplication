@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Colors-->
+    <integer-array name="color_dividers_int">
+        <item>0</item>
+        <item>6</item>
+        <item>17</item>
+        <item>34</item>
+        <item>51</item>
+        <item>59</item>
+        <item>67</item>
+        <item>76</item>
+        <item>84</item>
+        <item>92</item>
+        <item>101</item>
+    </integer-array>
+
+    <array name="colors">
+        <item>@color/backgroundBlue</item>
+        <item>@color/backgroundGreenLight</item>
+        <item>@color/backgroundGreen</item>
+        <item>@color/backgroundGreenDark</item>
+        <item>@color/backgroundOrangeLight</item>
+        <item>@color/backgroundOrange</item>
+        <item>@color/backgroundOrangeDark</item>
+        <item>@color/backgroundRedLight</item>
+        <item>@color/backgroundRed</item>
+        <item>@color/backgroundRedDark</item>
+        <item>@color/backgroundPurple</item>
+    </array>
+
+    <array name="colors_colorblind">
+        <item>@color/backgroundBlueColorblind</item>
+        <item>@color/backgroundGreenLightColorblind</item>
+        <item>@color/backgroundGreenColorblind</item>
+        <item>@color/backgroundGreenDarkColorblind</item>
+        <item>@color/backgroundOrangeLightColorblind</item>
+        <item>@color/backgroundOrangeColorblind</item>
+        <item>@color/backgroundOrangeDarkColorblind</item>
+        <item>@color/backgroundRedLightColorblind</item>
+        <item>@color/backgroundRedColorblind</item>
+        <item>@color/backgroundRedDarkColorblind</item>
+        <item>@color/backgroundPurpleColorblind</item>
+    </array>
+
+    <!--Home Carousel-->
+    <string-array name="initial_locations">
+        <item>Nearby</item>
+        <item>City</item>
+    </string-array>
+
+    <string-array name="health_messages">
+        <item>Enjoy your usual\noutdoor activities</item>
+        <item>Enjoy your usual\noutdoor activities</item>
+        <item>Enjoy your usual\noutdoor activities</item>
+        <item>Enjoy your usual\noutdoor activities</item>
+        <item>Enjoy your usual\noutdoor activities</item>
+        <item>Enjoy your usual\noutdoor activities</item>
+        <item>Enjoy your usual\noutdoor activities</item>
+        <item>Anyone experiencing discomfort\nshould consider reducing activity</item>
+        <item>Anyone experiencing discomfort\nshould consider reducing activity</item>
+        <item>Anyone experiencing discomfort\nshould consider reducing activity</item>
+        <item>Reduce physical\nexertion</item>
+    </string-array>
+
+</resources>
